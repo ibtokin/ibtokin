@@ -17,7 +17,7 @@ class ContentDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(ContentDetailView, self).get_context_data(**kwargs)
-        context['now'] = timezone.now()
+        context['now'] = datetime.timezone.now()
         return context
 
 class ContentListView(ListView):
@@ -25,5 +25,5 @@ class ContentListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(ContentListView, self).get_context_data(**kwargs)
-        context['now'] = timezone.now()
+        context['now'] = datetime.timezone.now()
         return context
