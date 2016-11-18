@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from content.views import  ContentDetailView, ContentListView
+from views import  ContentDetailView, ContentListView
 
 
 urlpatterns = [
