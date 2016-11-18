@@ -5,14 +5,16 @@ Note: these models are not supposed to make sense.
 In the event that you do find meaning in them,
 consult your doctor.
 '''
-class They(models.Model):
-    title = models.Charfield(max_length=100)
-    date = models.DateTimeField('Created')
 
+class They(models.Model):
+    name = models.Charfield(max_length=100)
+    profile_url = models.URLField()
 
 class Content(models.Model):
-    they = models.ForeignKey(They, on_delete=models.CASCADE)
+    author = models.ForeignKey(They, on_delete=models.CASCADE)
+    title = models.Charfield(max_length=100)
     description = models.Charfield(max_length=200)
-    url = models.URLField()
+    pub_date = models.DateTimeField('Originally Generated on ')
+    content_url = models.URLField()
     image_url = models.URLField()
     count = models.IntegerField(default=0)
