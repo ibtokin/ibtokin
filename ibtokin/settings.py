@@ -55,7 +55,7 @@ ROOT_URLCONF = 'ibtokin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['ibtokin/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
