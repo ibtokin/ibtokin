@@ -2,6 +2,7 @@ from django.views.generic.detail import DetailView, ListView
 from django.shortcuts import render
 from django.http import HttpResponse
 from models import They, Content
+import datetime
 
 def index(request):
     return HttpResponse("Coming Soon: Content!")
