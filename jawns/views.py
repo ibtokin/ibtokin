@@ -8,12 +8,6 @@ from jawns.models import They, Content
 
 
 
-def index(request):
-    return HttpResponse("Coming Soon: Content!")
-
-def detail(request, jawn_id):
-    return HttpResponse("Content # %s" % content_id)
-
 class ContentDetailView(DetailView):
     model = Content
 
