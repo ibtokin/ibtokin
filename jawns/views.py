@@ -1,7 +1,9 @@
-from django.views.generic.detail import DetailView, ListView
+from django.views.generic.detail import DetailView
+from django.views.generic.list import ListView
 from django.shortcuts import render
 from django.http import HttpResponse
-from models import They, Content
+from jawns.models import They, Content
+
 
 def index(request):
     return HttpResponse("Coming Soon: Content!")
