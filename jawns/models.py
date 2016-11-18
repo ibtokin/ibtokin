@@ -7,13 +7,13 @@ consult your doctor.
 '''
 
 class They(models.Model):
-    name = models.Charfield(max_length=100)
+    name = models.CharField(max_length=100)
     profile_url = models.URLField()
 
 class Content(models.Model):
     author = models.ForeignKey(They, on_delete=models.CASCADE)
-    title = models.Charfield(max_length=100)
-    description = models.Charfield(max_length=200)
+    title = models.CharField(max_length=100)
+    description = models.CharField(max_length=200)
     pub_date = models.DateTimeField('Originally Generated on ')
     content_url = models.URLField()
     image_url = models.URLField()
