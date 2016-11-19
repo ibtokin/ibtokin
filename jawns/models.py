@@ -26,4 +26,4 @@ class Content(models.Model):
     image_url = models.URLField()
     count = models.IntegerField(default=0)
     def __str__(self):
-        return self.author.name
+        return self.title
