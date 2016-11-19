@@ -1,5 +1,5 @@
 from django.contrib import admin
-
+from jawns.models import Content
 
 class ContentAdmin(admin.ModelAdmin):
     model = Content
