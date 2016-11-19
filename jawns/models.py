@@ -13,8 +13,14 @@ consult your doctor.
 class They(models.Model):
     name = models.CharField(max_length=100, blank=False)
     profile_url = models.URLField()
+
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name = "the
+        y"
+        verbose_name_plural = "they"
 
 
 class Content(models.Model):
@@ -25,5 +31,10 @@ class Content(models.Model):
     content_url = models.URLField()
     image_url = models.URLField()
     count = models.IntegerField(default=0)
+
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name = "content"
+        verbose_name_plural = "content"
