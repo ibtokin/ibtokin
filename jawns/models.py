@@ -2,7 +2,7 @@ from django.db import models
 
 '''
 Note: these models are not supposed to make sense.
-In the event that you do find meaning in them,
+In the event that you do find meaning in them, please
 consult your doctor.
 '''
 

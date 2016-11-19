@@ -1,5 +1,12 @@
 from django.contrib import admin
-from jawns.models import Content
+from jawns.models import Content, They
+
+
+class TheyAdmin(admin.ModelAdmin):
+    model = They
+    def get_context_data(admin.ModelAdmin):
+        context = super(TheyAdmin, self).get_context_data(**kwargs)
+        return context
 
 class ContentAdmin(admin.ModelAdmin):
     model = Content
