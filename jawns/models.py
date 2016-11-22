@@ -18,8 +18,7 @@ class They(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = "the
-        y"
+        verbose_name = "they"
         verbose_name_plural = "they"
 
 
